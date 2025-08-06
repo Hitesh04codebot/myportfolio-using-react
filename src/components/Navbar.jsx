@@ -1,21 +1,39 @@
-import { LogOut } from 'lucide-react'
-import React from 'react'
+
 import { ChevronRight } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { useState } from 'react';
+import { X } from 'lucide-react';
 
 function Navbar() {
+     const [hamburger,setHamburger]=useState(false);
+
+
   return (
-        <nav className='flex flex-row justify-between w-auto h-15 bg-blue-950 px-15'>
+    <>
+        <nav className='flex flex-row justify-between w-auto h-15 bg-blue-950 px-15 max-sm:p-8 max-md:p-8'>
             <div className='flex items-center cursor-pointer'>
                 {/* {logo} */}
-                 <span className='text-3xl font-bold text-blue-800'>&lt;/</span>&nbsp;<span className='text-2xl font-bold text-white'>Hitesh Kandari</span>&nbsp;<span className='text-3xl font-bold text-blue-800'>&gt;</span>
+                 <span className='text-3xl font-bold text-blue-800 max-sm:text-xl'>&lt;/</span>&nbsp;<span className='text-2xl font-bold text-white max-sm:text-xl'>Hitesh Kandari</span>&nbsp;<span className='text-3xl font-bold text-blue-800 max-sm:text-xl'>&gt;</span>
             </div>
-            <ul className='flex flex-row justify-aroun items-center space-x-5'>
-                <li className='text-white inline-block h-auto hover:text-blue-400 cursor-pointer'>Home</li>
-                <li className='text-white inline-block h-auto hover:text-blue-400 cursor-pointer'>About</li>
-                <li className='text-white inline-block h-auto hover:text-blue-400 cursor-pointer'>Projects</li>
+            <ul className='max-sm:hidden flex flex-row justify-around items-center space-x-5'>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Home</li>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>About</li>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Projects</li>
                 <li className='text-white h-auto cursor-pointer bg-blue-800 p-1.5 rounded-sm w-20 flex flex-row justify-evenly items-center'>Contact<ChevronRight className='text-xl'/></li>
-            </ul>  
+            </ul>
+            <button onClick={()=>setHamburger(!hamburger)} className='flex items-center text-white cursor-pointer sm:hidden'>
+                {hamburger ? <X /> : <Menu />}
+            </button>
         </nav>
+        {hamburger ? (<div className='flex flex-col justify-around items-start space-x-5 bg-blue-950 list-none p-2 sm:hidden space-y-3'>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Home</li>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>About</li>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Projects</li>
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer '>Contact</li>
+        </div>):null}
+    </>
+            
+
   )
 }
 
