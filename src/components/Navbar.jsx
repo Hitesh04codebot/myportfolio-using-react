@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-        <nav className='flex flex-row justify-between w-auto h-15 bg-blue-950 px-15 max-sm:p-8 max-md:p-8'>
+        <nav className='flex flex-row justify-between w-auto h-15 bg-blue-950 px-15 max-sm:p-5 max-md:p-8'>
             <div className='flex items-center cursor-pointer'>
                 {/* {logo} */}
                  <span className='text-3xl font-bold text-blue-800 max-sm:text-xl'>&lt;/</span>&nbsp;<span className='text-2xl font-bold text-white max-sm:text-xl'>Hitesh Kandari</span>&nbsp;<span className='text-3xl font-bold text-blue-800 max-sm:text-xl'>&gt;</span>
@@ -29,8 +29,8 @@ function Navbar() {
                 <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Home</li>
                 <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>About</li>
                 <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Projects</li>
-                <li className='text-white h-auto hover:text-blue-400 cursor-pointer '>Contact</li>
-        </div>):null}
+                <li className='text-white h-auto hover:text-blue-400 cursor-pointer'>Contact</li>
+        </div>): null}
     </>
             
 
