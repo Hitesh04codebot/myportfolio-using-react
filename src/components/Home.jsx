@@ -19,13 +19,13 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-1/2  h-125 bg-blue-950 flex justify-center items-center montserrat-font max-sm:h-auto max-sm:w-full max-sm:p-4">
+      <div className="w-1/2  h-125 bg-blue-950 flex justify-center items-center montserrat-font max-sm:h-auto max-sm:w-full max-sm:p-4 max-lg:flex-col max-lg:justify-center max-lg:items-center">
         <div className="w-auto h-auto ">
           {/* content */}
-          <p className="text-2xl font-bold text-white   max-sm:text-xl">
+          <p className="text-2xl font-bold text-white max-sm:text-2xl lg:text-center sm:text-center">
             Hi, I'm Hitesh Kandari
           </p>
-          <p className="text-6xl font-extrabold text-white max-sm:text-3xl">
+          <p className="text-6xl font-extrabold text-white max-sm:text-4xl lg:text-center sm:text-center">
             Software Engineer &<br />
             Full Stack Developer
           </p>
