@@ -1,4 +1,4 @@
-import React from "react";
+
 import Myimage from "../assets/photos/myimage.png";
 
 function Home() {
@@ -25,7 +25,7 @@ function Home() {
           <p className="text-2xl text-center font-bold text-white max-sm:text-2xl  drop-shadow-[0_0_2px_white]">
             Hi, I'm Hitesh Kandari
           </p>
-          <p className="text-6xl text-center font-extrabold text-white max-sm:text-4xl  drop-shadow-[0_0_2px_white]">
+          <p className="text-6xl text-center font-extrabold text-white max-sm:text-4xl  drop-shadow-[0_0_2px_white] max-md:text-3xl">
             Software Engineer &<br />
             Full Stack Developer
           </p>

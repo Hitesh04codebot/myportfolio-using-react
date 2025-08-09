@@ -4,12 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // 👈 Default font is now Montserrat
-      },
-    },
-  },
-  plugins: [react(),tailwindcss()],
+  plugins: [react(), tailwindcss()],
 })
