@@ -13,7 +13,7 @@ import expressjs from '../assets/photos/expressjs.png'
 function About() {
   return (
     <>
-      <div className="text-center m-3 font-extrabold text-4xl">About Me</div>
+      <div className="text-center m-3 font-extrabold text-4xl" id="about" >About Me</div>
       <div className="w-vw mx-20 my-10 flex flex-row justify-center items-center gap-7 max-md:flex max-md:flex-col max-md:mx-3 max-lg:flex max-lg:flex-col max-lg:mx-3">
         <div className="w-1/2 max-md:w-full max-lg:w-full ">
           <p className='text-2xl font-bold w-full'>My Journey</p>

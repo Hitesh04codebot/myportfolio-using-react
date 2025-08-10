@@ -3,7 +3,7 @@ import Myimage from "../assets/photos/myimage.png";
 
 function Home() {
   return (
-    <div className="flex flex-row max-sm:flex-col justify-center items-center cursor-pointer">
+    <div className="flex flex-row max-sm:flex-col justify-center items-center cursor-pointer " id='home'>
       <div className="w-1/2 h-125 p-4 flex justify-center items-center bg-black max-sm:w-full max-sm:h-70">
         <div
           className="w-120 h-120 rounded-full bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 border-[6px] border-white overflow-hidden max-sm:w-48 max-sm:h-48 hover:scale-101 transition-transform duration-300"
