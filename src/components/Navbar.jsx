@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-row justify-between w-auto h-15 bg-black px-15 max-sm:p-5 max-md:p-8 sticky top-0 ">
+      <div className=" flex flex-row justify-between w-auto h-15 bg-black px-15 max-sm:p-5 max-md:p-8">
         <div className="flex items-center cursor-pointer">
           {/* {logo} */}
           <span className="text-3xl font-bold text-purple-500 max-sm:text-xl">
@@ -58,11 +58,11 @@ function Navbar() {
         </button>
       </div>
       {hamburger ? (
-        <div className="flex flex-col justify-around items-start space-x-5 bg-black list-none p-2 sm:hidden space-y-3 ">
+        <div className="flex flex-col justify-around items-start space-x-5 bg-black list-none p-2 sm:hidden space-y-3 z-10">
           <a
             href="#home"
              onClick={() => setHamburger(false)}
-            className="text-white h-auto hover:text-blue-400 cursor-pointer"
+            className="text-white h-auto hover:text-blue-400 cursor-pointer w-full"
           >
             Home
           </a>
