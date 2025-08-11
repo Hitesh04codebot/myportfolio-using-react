@@ -41,8 +41,8 @@ function Project() {
     ];
   return (
     <>
-    <div className="text-center pt-3 font-extrabold text-4xl text-white bg-black w-vw" id="projects" >Projects</div>
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center bg-black p-3 gap-10'>
+    <div className="text-center pt-3 font-extrabold text-4xl text-black bg-white w-vw" id="projects" >Projects</div>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center bg-white p-3 gap-10'>
         {projectsarr.map((items,index)=>{
             return <Cards item={items} key={index}/>
         })}

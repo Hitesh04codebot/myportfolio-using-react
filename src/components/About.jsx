@@ -10,12 +10,16 @@ import tailwind from '../assets/photos/tailwind.png'
 import nodejs from '../assets/photos/nodejs.png'
 import mongodb from '../assets/photos/mongodb.png'
 import expressjs from '../assets/photos/expressjs.png'
+import { motion } from "framer-motion";
 function About() {
   return (
     <>
       <div className="text-center m-3 font-extrabold text-4xl" id="about" >About Me</div>
       <div className="w-vw mx-20 my-10 flex flex-row justify-center items-center gap-7 max-md:flex max-md:flex-col max-md:mx-3 max-lg:flex max-lg:flex-col max-lg:mx-3">
-        <div className="w-1/2 max-md:w-full max-lg:w-full ">
+        <motion.div initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }} className="w-1/2 max-md:w-full max-lg:w-full ">
           <p className='text-2xl font-bold w-full'>My Journey</p>
           <br />
           <p>
@@ -38,8 +42,11 @@ function About() {
               Download Resume
             </button>
           </a>
-        </div>
-        <div className="w-1/2 p-3 border-2 border-black shadow-[0px_0px_10px_rgba(0,0,0,0.34)] box-border max-md:w-full rounded-3xl max-lg:w-full">
+        </motion.div>
+        <motion.div initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }} className="w-1/2 p-3 border-2 border-black shadow-[0px_0px_10px_rgba(0,0,0,0.34)] box-border max-md:w-full rounded-3xl max-lg:w-full">
             <p className='text-center text-2xl font-bold'>Skills & Expertise</p><br/>
             <div className='flex flex-row justify-center items-center flex-wrap space-x-5 space-y-3 p-10 max-md:p-1 max-lg:w-full max-lg:p-2'>
               <div className='flex justify-center items-center w-50px h-auto rounded-lg border border-black px-3 py-2 shadow-[0px_0px_10px_rgba(0,0,0,0.34)] transform hover:scale-110 transition duration-300'>
@@ -83,7 +90,7 @@ function About() {
                   <span className='font-semibold'>Express js</span>
               </div>
             </div>
-          </div>
+          </motion.div>
       </div>
     </>
   );
