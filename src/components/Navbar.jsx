@@ -8,8 +8,8 @@ function Navbar() {
 
   return (
     <>
-      <div className=" flex flex-row justify-between w-auto h-15 bg-black px-15 max-sm:p-5 max-md:p-8">
-        <div className="flex items-center cursor-pointer">
+      <div className=" flex flex-row justify-between w-auto h-15 bg-black px-10 max-sm:p-5 max-md:p-8">
+        <div className="flex items-center flex-1/2 cursor-pointer">
           {/* {logo} */}
           <span className="text-3xl font-bold text-purple-500 max-sm:text-xl">
             &lt;/

@@ -38,7 +38,7 @@ function About() {
           </p>
           <br />
           <a href={resume} download="Hitesh_Kandari_Resume.pdf">
-            <button className="flex items-center gap-2 px-5 py-2 bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300">
+            <button className="flex items-center gap-2 px-5 py-2 bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300 cursor-pointer">
               Download Resume
             </button>
           </a>
